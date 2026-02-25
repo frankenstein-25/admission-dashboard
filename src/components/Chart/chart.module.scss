@@ -1,0 +1,8 @@
+.heading {
+  @apply text-xl font-semibold text-dark pb-4;
+}
+@media (max-width: 568px) {
+  .heading {
+    @apply text-lg pb-3 pl-4;
+  }
+}

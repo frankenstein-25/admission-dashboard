@@ -1,0 +1,20 @@
+.container {
+  button{
+    @apply transition-all duration-300;
+  }
+  .primaryBtn {
+    @apply bg-blue-500 px-6 py-3 rounded text-white uppercase;
+    &:hover {
+      @apply bg-blue-700  ;
+    }
+  }
+}
+
+@media (max-width: 568px) {
+  .container {
+    @apply w-full;
+    .primaryBtn {
+      @apply px-4 py-2 w-full;
+    }
+  }
+}

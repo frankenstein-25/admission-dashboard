@@ -1,0 +1,19 @@
+.loader {
+  @apply w-full h-full fixed z-50 bg-dark left-0 top-0;
+  .container {
+    @apply relative flex w-full h-full border-gray-400 items-center justify-center;
+    .spinner {
+      @apply w-12 h-12 rounded-full border-4 border-light border-t-dark;
+      animation: spin 1s linear infinite;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

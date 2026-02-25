@@ -1,0 +1,26 @@
+.container {
+  @apply relative border border-solid transition-all duration-300 border-gray-500 rounded w-max flex ;
+  input {
+    @apply bg-transparent px-3 py-2 border-0 outline-none text-light w-full;
+    &::-webkit-calendar-picker-indicator {
+      filter: invert(1);
+    }
+  }
+
+  label {
+    @apply absolute text-xs rounded font-light -translate-y-3 translate-x-1.5 bg-dark px-1.5 py-1 text-white;
+  }
+
+  &:hover {
+    @apply border-light;
+  }
+}
+
+@media (max-width: 568px) {
+  .container {
+    @apply w-full;
+    input {
+      @apply px-2.5 py-1.5;
+    }
+  }
+}

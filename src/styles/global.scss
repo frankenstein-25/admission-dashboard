@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  @apply bg-dark;
+}
+
+.heading{
+  @apply text-light;
+}
+.container{
+  @apply mx-auto w-full px-16;
+  max-width: 1920px;
+}
+
+@media (max-width: 768px) {
+  .container{
+    @apply px-8;
+  }
+}
+@media (max-width: 568px) {
+  .container{
+    @apply px-4;
+  }
+}

@@ -1,0 +1,93 @@
+.heading {
+  @apply text-4xl p-10 text-center font-semibold;
+}
+
+.formContainer {
+  @apply flex flex-wrap gap-8 justify-between;
+}
+
+.cardWrapper {
+  @apply flex flex-wrap gap-8 w-full mt-10;
+}
+
+.chartContainer {
+  @apply grid grid-cols-6 gap-8 mt-10;
+  .chart {
+    @apply bg-light rounded p-6;
+    &.chart1 {
+      @apply col-span-4;
+    }
+
+    &.chart2 {
+      @apply col-span-2;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .cardWrapper {
+    @apply flex justify-between;
+    & > div {
+      @apply flex-1 max-w-full;
+    }
+  }
+  .chartContainer {
+    @apply grid-cols-5;
+    .chart {
+      &.chart1 {
+        @apply col-span-3;
+      }
+
+      &.chart2 {
+        @apply col-span-2;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    @apply text-3xl p-8;
+  }
+
+  .formContainer {
+    @apply gap-6;
+  }
+
+  .cardWrapper {
+    @apply gap-6 mt-8;
+  }
+
+  .chartContainer {
+    @apply  grid-cols-1 gap-6 mt-8;
+    .chart {
+      &.chart1 {
+        @apply col-span-1;
+      }
+
+      &.chart2 {
+        @apply col-span-1;
+      }
+    }
+  }
+}
+
+@media (max-width: 568px) {
+  .heading {
+    @apply p-6;
+  }
+
+  .formContainer {
+    @apply gap-4;
+  }
+
+  .cardWrapper {
+    @apply flex-col gap-4 mt-6;
+  }
+  .chartContainer {
+    @apply mt-6 gap-4;
+    .chart {
+      @apply rounded p-4 pl-0;
+    }
+  }
+}
