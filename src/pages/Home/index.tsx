@@ -46,7 +46,7 @@ const Home: React.FC = () => {
 
     if (loading) return <Loader/>;
 
-    return <div className={'container'}>
+    return <div className={`container ${styles.container}`}>
         <h1 className={`heading ${styles.heading}`}>Admission Analytics Dashboard</h1>
         <div className={styles.formContainer}>
             <div className={styles.formContainer}>

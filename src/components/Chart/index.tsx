@@ -56,7 +56,7 @@ const Chart: React.FC<ComponentProps> = ({type, title, data}) => {
                 {title}
             </h5>
             {data?.length === 0 ? (
-                <p>No Data Available</p>
+                <p className={styles.errorText}>No Data Available</p>
             ) : getChart()}
         </div>
     );
